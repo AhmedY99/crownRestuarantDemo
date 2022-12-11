@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Restuarant</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkalami&family=Oswald:wght@600&family=Poppins:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="holder">
+    <nav class="navbar" id="navLog">
+        <i id="Navicon" class="fa fa-bars" onclick="changeIcon()"></i>
+
+        <h2><a href="index.html">CROWN.</a></h2>
+        <ul id="navUl">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html"> Menu</a></li>
+            <li><a href="about.html"> About Us</a></li>
+        </ul>
+
+        <i class="fa fa-shopping-cart shopping-Icon" id="shopping-icon"></i>
+        <div id="quantity" class="quantity">0</div>
+        
+<!------------------cart---------------------->
+        <div class="cart" id="cart" onload="get()">
+            <h2 class="cart-title">Shopping Cart</h2>
+
+            <!--------cart-content---------->
+            <div class="cart-content" id="cart-content">
+                
+            </div>
+            <!-------Total------->
+            <div class="total-price">
+                <div class="total-title">Subtotal</div>
+                <div class="total-price-items" id="subTotal">$ 0</div>
+            </div>
+            <div class="tax-price">
+                <div class="tax-title">Tax</div>
+                <div class="tax-price-items" id="tax">$ 0</div>
+            </div>
+            <div class="total-item-price">
+                <div class="total-item-title">Total</div>
+                <div class="totalPrice" id="totalPrice">$ 0</div>
+            </div>
+            <!-----------Buy Button----------------->
+            
+            <button type="button" class="buyBtn">Check Out</button>
+            <!----------cart-close-------->
+            <i class="fa fa-times cart-times" id="close-cart"></i>
+        </div>
+
+
+
+
+    </nav>
+    <div class="subhead">
+        <h2> CROWN RESTUTANT LEWISTON MAIN STREET</h2>
+        <span class="hour">10:00 AM - 9:00 PM</span>
+    </div>
+    <!--------------shop-------------------->
+    <section class="shop-container">
+        <h2 class="section-title">
+           Our Menu
+        </h2>
+        <!---------------shop-content-------------------------------->
+
+        <div class="store-content">
+            <!----------------------item1--------------------------------->
+            <div data-id="1" class="product-list">
+                <img src="assets/image/pasta.jpg" alt="image" class="item-image">
+                <h4 class="item-title">Spageti</h4>
+                <p class="item-desc">Serve With Your favorite Spaghetti.</p>
+                <span class="price"> $ 12.50</span>
+                <button class="add-cart">Add </button>
+            </div>
+            <!------------------Item2--------------------->
+            <div data-id="2" class="product-list">
+                <img src="assets/image/fries.jpg" alt="" class="item-image">
+                <h4 class="item-title">Curly Fries</h4>
+                <p class="item-desc">Freshly Curly Fries with different size</p>
+                <span class="price">$ 4.50</span>
+                <button class="add-cart">Add </button>
+            </div>
+            <!-------------------item3----------------------------------->
+            <div data-id="3" class="product-list">
+                <img src="assets/image/fried.jpg" alt="" class="item-image">
+                <h4 class="item-title">Crispy Chicken</h4>
+                <p class="item-desc">Freshly and delicious Crispy chicken with suace</p>
+                <span class="price">$ 6.50</span>
+                <button class="add-cart">Add </button>
+            </div>
+            <!---------------------item4----------------------->
+            <div data-id="4" class="product-list">
+                <img src="assets/image/breadS.jpg" alt="" class="item-image">
+                <h4 class="item-title">Toasted Bread</h4>
+                <p class="item-desc">Freshly toasted bread with egg</p>
+                <span class="price">$ 5.50</span>
+                <button class="add-cart">Add </button>
+            </div>
+            
+            <!-----------------------item5------------------------------------->
+            <div data-id="5" class="product-list">
+                <img src="assets/image/salad.jpg" alt="" class="item-image">
+                <h4 class="item-title">Salad</h4>
+                <p class="item-desc">Freshy salad combined with other vegetables and toppings</p>
+                <span class="price">$ 4.50</span>
+                <button class="add-cart">Add </button>
+            </div>
+            <!----------------------Item 6--------------------------->
+            <div data-id="6" class="product-list">
+                <img src="assets/image/sanwitch1.jpg" alt="" class="item-image">
+                <h4 class="item-title">Sandwich</h4>
+                <p class="item-desc">Freshly sandwich with  green peppers tomatoes and side fries</p>
+                <span class="price">$ 10.05</span>
+                <button class="add-cart">Add </button>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="iconmove">
+        <a id="icon8" class="fa fa-angle-up icon8" href="#holder"></a>
+    </div>
+
+<div class="foot-conatiner">
+    <footer>
+        <div id="left">
+            <h3>Quick Links</h3>
+            <p>
+                <ul>
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </ul>
+            </p>
+        </div>
+        <div id="center">
+            <h3>Find Us</h3>
+            <p class="prag1">Our Address</p>
+            <div class="find-icon">
+                <i class="uil uil-map-marker"></i>
+                <div class="find-text">
+                    <p>98 WOOD St</p>
+                    <p>Lewiston, ME 04240</p>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <h3>Connect us</h3>
+            <div id="social-media">
+                <ul>
+                    <li> <a href="#"> <i class="fa fa-facebook"></i></a> </li>
+                    <li><a href="#"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"> <i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"> <i class="fa fa-youtube"></i></a></li>
+
+                </ul>
+            </div>
+            <p>This Webside is developed by Ahmed</p>
+        </div>
+    </footer>
+</div>
+
+    <script src="Javascript/menu.js"></script>
+    <script src="Javascript/script.js"></script>
+
+</body>
+
+</html>

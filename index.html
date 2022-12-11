@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Oswald:wght@600&family=Poppins:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="holder">
+    <nav class="navbar" id="navLog">
+        <i id="Navicon" class="fa fa-bars" onclick="changeIcon()"></i>
+
+        <h2><a href="index.html">CROWN.</a></h2>
+      
+        <ul id="navUl">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html"> Menu</a></li>
+            <li><a href="about.html"> About Us</a></li>
+        </ul>
+        <i class="fa fa-shopping-cart shopping-Icon"></i>
+        <div id="quantity" class="quantity">0</div>
+        <!------------------cart---------------------->
+        <div class="cart">
+            <h2 class="cart-title">Shopping Cart</h2>
+
+            <!--------cart-content---------->
+            <div class="cart-content">
+                
+            </div>
+            <!-------Total------->
+            <div class="total-price">
+                <div class="total-title">Subtotal</div>
+                <div class="total-price-items">$ 0</div>
+            </div>
+            <div class="tax-price">
+                <div class="tax-title">Tax</div>
+                <div class="tax-price-items">$ 0</div>
+            </div>
+            <div class="total-item-price">
+                <div class="total-item-title">Total</div>
+                <div class="totalPrice">$ 0</div>
+            </div>
+            <!-----------Buy Button----------------->
+            <button type="button" class="buyBtn">Check Out</button>
+            <!----------cart-close-------->
+            <i class="fa fa-times cart-times" id="close-cart"></i>
+        </div>
+
+    </nav>
+
+    <div id="subhead">
+        <video id="video" autoplay loop muted>
+            <source src="assets/image/video.mp4" type="video/mp4">
+        </video>
+        <div class="subhead-content">
+            <div class="title">
+                <h2> CROWN RESTAUTANT LEWISTON WOOD STREET</h2>
+            </div>
+            <div class="content-hour">
+                <h3>10:00 AM - 9:00 PM</h3>
+            </div>
+            <div class="content-order">
+                <a class="order" href="menu.html"> Order Now</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="btncontainer">
+                <button id="myBtn" onclick="myFunction()">STORE INFO</button>
+                <button id="myBtn1" onclick="display()">Store Hours</button>
+                <a id="btn2" href="https://goo.gl/maps/ZaKznuXozjgGzEYk6" target="_blank"> Get Direction</a>
+            </div>
+            <div class="storeinfo-holder">
+                <div id="info">
+                    <div class="content-holder" id="content-holder">
+                        <p>98 WOOD St</p>
+                        <p>Lewiston, ME 04210</p>
+                        <p id="phone"><a href="tel:2073767633">Phone: 376-7633</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="storeHour">
+                    <div class="storecontent" id="storeContent">
+                        <table>
+                            <tr id="first">
+                                <td> Mon</td>
+                                <td>10:00 AM - 9:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td> Tue</td>
+                                <td>10:00 AM - 9:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td> Wed</td>
+                                <td>10:00 AM - 9:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td> Thur</td>
+                                <td>10:00 AM - 9:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td> Fri</td>
+                                <td>10:00 AM - 9:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td> Sat</td>
+                                <td>10:00 AM - 9:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td> Sun</td>
+                                <td>10:00 AM - 9:00 PM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="content-text">
+                <h2>Our Story</h2>
+                <h4>Welcome to Crown Restuarant</h4>
+                <p>
+                    Crown restaurant values healthy nutritious food. We serve the best quality meals and ensure we use
+                    the best of what is local and sustainable. </p>
+                <p class="pr1"> We strive to use the best ingredients and provide our customers with the highest quality
+                    services. The smile on our customer’s faces has always been our priority and we work hard to achieve
+                    that.
+                </p>
+                <a class="btn" href="about.html"> More About Us</a>
+            </div>
+            <div class="about-content-image">
+                <img src="assets/image/R1.jpg" alt="">
+            </div>
+        </div>
+        <div id="midcontent">
+            <img src="assets/image/fried.jpg" alt="">
+            <div class="textCont">
+                <h2> Special Order </h2>
+                <p> serve with your choice with delicious food with protiens. </p>
+                <a href="menu.html"><span> Order now</span></a>
+            </div>
+            <div class="textCon1">
+                <h2> Special Order </h2>
+                <p> serve with your choice with delicious food with protiens. </p>
+                <a href="menu.html"><span> Order now</span></a>
+            </div>
+            
+
+        </div>
+
+        <div class=" midd-content-show">
+                    <h3>We made it easy with these favorites Just only Click</h3>
+                    <div class="show-content-holder">
+                        <div class="card-content">
+                            <a href="#">
+                                <img src="assets/image/pasta.jpg" alt="image"> </a>
+                            <div class="card-holder">
+                                <p><a href=""> Delicious Pasta </a></p>
+                            </div>
+
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <img src="assets/image/sanwitch1.jpg" alt="image"> </a>
+                            <div class="card-holder">
+                                <p><a href="">Serve With Your favorite Sandwich </a></p>
+                            </div>
+
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <img src="assets/image/pasta.jpg" alt="image"> </a>
+                            <div class="card-holder">
+                                <p><a href=""> Delicious Pasta </a></p>
+                            </div>
+
+                        </div>
+                    </div>
+        </div>
+
+        <div class="text-testimonial-holder">
+            <h3>What People Says</h3>
+
+            <div class="testimonial-content">
+                <div class="slides">
+                    <q>Last Wednesday I came for restaurant week. It was Awesome! The portions were overly generous.
+                        Everything was so delicious and yummy – what a bargain. I will be back soon.
+                        Thanks,</q>
+                    <p class="author">- Alex John</p>
+                </div>
+
+                <div class="slides">
+                    <q>The food was extraordinarily yummy. We love your food which is why we frequent your
+                        restaurant.
+                        We would certainly consider Crown Restaurant for another time.
+                    </q>
+                    <p class="author">- Hussein Ali</p>
+                </div>
+
+                <div class="slides">
+                    <q>Thank you very much for all your hard work, the outstanding meals, and the fantastic service.
+                        Crown has always had great food. I have never been disappointed at Crown.</q>
+                    <p class="author">- Li Su</p>
+                </div>
+                <div class="slide prev" onclick="plusSlides(-1)">
+                    <i class="fa fa-angle-left slide-icon"></i>
+                </div>
+                <div class="slide next" onclick="plusSlides(1)">
+                    <i class="fa fa-angle-right slide-icon"></i>
+                </div>
+
+            </div>
+            <!----------Add Arrow--------->
+
+            <!--------------Add Pagination--------------->
+            <div class="dot">
+                <span onclick="currentSlide(1)"></span>
+                <span onclick="currentSlide(2)"></span>
+                <span onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+            <div class="iconmove">
+                <a id="icon8" class="fa fa-angle-up icon8" href="#holder"></a>
+            </div>
+        
+        <div class="foot-conatiner">
+            <footer>
+                <div id="left">
+                    <h3>Quick Links</h3>
+                    <p>
+                        <ul>
+                            <li> <a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="center">
+                    <h3>Find Us</h3>
+                    <p class="prag1">Our Address</p>
+                    <div class="find-icon">
+                        <i class="uil uil-map-marker"></i>
+                        <div class="find-text">
+                            <p>98 WOOD St</p>
+                            <p>Lewiston, ME 04240</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <h3>Connect us</h3>
+                    <div id="social-media">
+                        <ul>
+                            <li> <a href="#"> <i class="fa fa-facebook"></i></a> </li>
+                            <li><a href="#"> <i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"> <i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"> <i class="fa fa-youtube"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <p>This Webside is developed by Ahmed</p>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+    <script src="Javascript/script.js">
+    </script>
+    <script src="Javascript/menu.js"></script>
+</body>
+
+</html>
